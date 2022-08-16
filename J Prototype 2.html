@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p>You cannot add a new property to a constructor function.</p>
+
+<p id="demo"></p>
+
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+  
+}
+
+Person.nationality = "English";
+
+const myBrother = new Person("Amit", "Bhavsar", 25, "blue");
+const mySister = new Person("Sanjna", "Raiyani", 15, "black");
+
+document.getElementById("demo").innerHTML =
+"The nationality of  my Brother is " + myBrother.nationality; 
+</script>
+
+</body>
+</html>

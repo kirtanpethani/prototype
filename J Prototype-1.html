@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p>Using an object constructor:</p>
+
+<p id="demo"></p>
+
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+const myBrother = new Person("John", "Doe", 19, "blue");
+const mySister = new Person("Sally", "Rally", 22, "green");
+
+document.getElementById("demo").innerHTML =
+"My Brother is " + myBrother.age + ". My Sister is " + mySister.age; 
+</script>
+
+</body>
+</html>
